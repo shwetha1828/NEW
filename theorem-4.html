@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <body>
+<!--Header Section-->
+        <header>
+            <div class="header">
+               <div class="logo left">
+                 <img src="patil.png" alt="left logo">
+            </div>
+              <div class="college name">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+              </div>
+    
+                 <div class="logo right">
+                    <img src="nss.png" alt="right logo">
+                </div>
+        </header>
+        <h2><center>DIAGONALIZATION THEOREM</center></h2>
+        <div class="main">
+        <div class="statement">
+          <h3>Statement:</h3>
+        </div>
+        <div class="body">
+             <pre class="fontstyle">
+                The Diagonalization Theorem, a key result in linear algebra,
+                states that an n x n matrix A is diagonalizable if and only if A has n linearly independent eigenvectors. 
+                This means that A can be transformed into a diagonal matrix D through a similarity transformation:
+                A = PDP-1, where P is an invertible matrix whose columns are the eigenvectors of A, 
+                and D is a diagonal matrix with the eigenvalues of A on the diagonal. 
+        </div>
+        </div>
+        <h3>Proof:</h3>
+           <pre class="fontstyle">
+            1. Diagonalizable Matrix:
+               A matrix A is considered diagonalizable if it is similar to a diagonal matrix.
+               This similarity is expressed as A = PDP-1,
+               where P is an invertible matrix and D is a diagonal matrix. 
+
+            2. Eigenvectors and Eigenvalues:
+               The matrix A is diagonalizable if and only if it has n linearly independent eigenvectors. 
+               These eigenvectors, when used to form the columns of matrix P,
+               allow for the transformation of A into the diagonal matrix D, 
+               where D has the corresponding eigenvalues of A on its diagonal. 
+
+            3. Procedure for Diagonalization:
+                   Step 1:
+                   Find Eigenvalues:
+                   Determine the eigenvalues of the matrix A by solving the characteristic equation 
+                   |A - λI| = 0, where λ represents the eigenvalues and I is the identity matrix. 
+
+                   Step 2:
+                   Find Eigenvectors:  
+                   For each eigenvalue, find a corresponding eigenvector by solving the equation (A - λI)v = 0,
+                   where v represents the eigenvector. 
+
+                  Step 3: 
+                  Form Matrix P: Create the matrix P with the linearly independent eigenvectors as its columns.
+
+                  Step 4: 
+                  Form Matrix D: Construct the diagonal matrix D, 
+                  where the diagonal entries are the eigenvalues of A.
+
+                  Step 5: 
+                  Verify Diagonalization: 
+                  Use the transformation A = PDP-1 to verify that the matrix A is indeed diagonalizable. 
+           </pre>
+
+                  <center><button onclick="window.location.href='theorem-3.html'">Back</button>
+                  <button onclick="window.location.href='home.html'">Home</button></center>
+               
+            <footer>
+          <div class="footer">
+          <h2><center>Patil institution <br>Call:+9071014999<br>
+            K.V.Compound Gangavathi Road ,SINDHANUR-584128</center></h2>
+          </div>
+        </footer>

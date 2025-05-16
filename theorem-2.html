@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <body>
+<!--Header Section-->
+        <header>
+            <div class="header">
+               <div class="logo left">
+                 <img src="patil.png" alt="left logo">
+            </div>
+              <div class="college name">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+              </div>
+    
+                 <div class="logo right">
+                    <img src="nss.png" alt="right logo">
+                </div>
+        </header>
+        <h2><center>GRAM-SCHMIDT ORTHOGONALIZATION THEOREM</center></h2>
+        <div class="main">
+        <div class="statement">
+          <h3>Statement:</h3>
+        </div>
+        <div class="body">
+             <pre class="fontstyle">
+                    The Gram-Schmidt process is a method to transform a set of linearly independent vectors 
+                    into an orthogonal or orthonormal set, while preserving the original span of the vectors
+                    The process works by iteratively projecting each vector onto the subspace spanned 
+                    by the previously orthogonalized vectors and subtracting this projection to obtain a 
+                    vector orthogonal to the earlier vectors.  
+        </div>
+        </div>
+        <h3>Proof:</h3>
+           <pre class="fontstyle">
+            1.Base Case:
+               Let {v1, v2, ..., vk} be a linearly independent set of vectors. We define u1 = v1.
+               {u1} is a set of orthogonal vectors.
+
+            2. Inductive Hypothesis:
+                 Assume that for some 
+                k >= 1, we have {u1, u2, ..., uk} is an orthogonal set such that
+                Span{u1, u2, ..., uk} = Span{v1, v2, ..., vk}.
+
+            3. Inductive Step:
+                 Define uk+1 as the projection of vk+1 onto the 
+                 subspace spanned by {u1, u2, ..., uk} subtracted from vk+1: 
+
+                 uk+1 = vk+1 - [ (vk+1 ⋅ u1) / ||u1||² ] * u1 - [ (vk+1 ⋅ u2) /
+                 ||u2||² ] * u2 - ... - [ (vk+1 ⋅ uk) / ||uk||² ] * uk. 
+
+                 *Orthogonality: For any i from 1 to k, uk+1 is orthogonal to ui:
+                 uk+1 ⋅ ui = (vk+1 - [ (vk+1 ⋅ u1) / ||u1||² ] * u1 - ... - [ (vk+1 ⋅ uk) / ||uk||² ] * uk) ⋅ ui
+                 = vk+1 ⋅ ui - [ (vk+1 ⋅ u1) / ||u1||² ] * (u1 ⋅ ui) - ... - [ (vk+1 ⋅ uk) / ||uk||² ] * (uk ⋅ ui)
+                 = vk+1 ⋅ ui - [ (vk+1 ⋅ ui) / ||ui||² ] * ||ui||²
+                 = 0. 
+
+                 *Span: Since uk+1 is a linear combination of vk+1 and {u1, u2, ..., uk}, and Span{u1, u2, ..., uk} 
+                 = Span{v1, v2, ..., vk}, we have Span{u1, u2, ..., uk, uk+1} = Span{v1, v2, ..., vk, vk+1}. 
+
+                  Conclusion: By induction, we have established that for any linearly independent set {v1, v2, ..., vn},
+                  the Gram-Schmidt process produces 
+                  an orthogonal set {u1, u2, ..., un} with Span{u1, u2, ..., un} = Span{v1, v2, ..., vn}.
+           </pre>
+                 
+                  <center><button onclick="window.location.href='theorem-1.html'">Back</button>
+                         <button onclick="window.location.href='home.html'">Home</button>
+                         <button onclick="window.location.href='theorem-3.html'">Next</button></center>
+                  
+              <footer>
+          <div class="footer">
+          <h2><center>Patil institution <br>Call:+9071014999<br>
+            K.V.Compound Gangavathi Road ,SINDHANUR-584128</center></h2>
+          </div>
+        </footer>
+
+
+            

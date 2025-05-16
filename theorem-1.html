@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="home.css">
+        <body>
+<!--Header Section-->
+        <header>
+            <div class="header">
+               <div class="logo left">
+                 <img src="patil.png" alt="left logo">
+            </div>
+              <div class="college name">
+                <h1>PATIL DEGREE COLLEGE FOR WOMENS</h1>
+              </div>
+    
+                 <div class="logo right">
+                    <img src="nss.png" alt="right logo">
+                </div>
+        </header>
+        <h2><center>RANK-NULLITY THEOREM</center></h2>
+        <div class="main">
+        <div class="statement">
+          <h3>Statement:</h3>
+        </div>
+        <div class="body">
+             <pre class="fontstyle">
+            The Rank-Nullity Theorem states that for any linear transformation (or matrix)<br>
+            between finite-dimensional vector spaces, the dimension of the domain is equal to <br> 
+            the sum of the rank (dimension of the image) and the nullity (dimension of the kernel).<br>
+            In simpler terms, the number of columns of a matrix equals the sum of its rank and nullity.</pre>
+        </div>
+        </div>
+        <h3>Proof:</h3>
+           <pre class="fontstyle">
+            1.Consider a linear transformation <br>
+            T: V -> W between finite-dimensional vector spaces V and W. <br>
+            Assume V has dimension n and W has dimension m. <br>
+
+            2.Let A be the matrix representation of T. A is an m x n matrix, where n = dim(V). 
+
+            3.Consider the nullspace of T.<br>
+            This is the set of all vectors in V that are mapped to the zero vector in W by T (i.e., T(v) = 0).<br>
+            The nullspace of T is the kernel of A, denoted as ker(T) or null(A). 
+
+            4.The Rank-Nullity Theorem states: dim(V) = rank(T) + nullity(T). 
+
+            5.Relating to the matrix A:<br>
+             This can be rewritten as n = rank(A) + nullity(A), where n is the number of columns in A. 
+
+            6.Proof for the matrix A:
+              Case 1:
+
+              If rank(A) = n: <br>
+              The only solution to Ax = 0 is the trivial solution x = 0. <br>
+              Therefore, nullity(A) = 0, and the theorem holds (n = n + 0). 
+              
+              Case 2:
+
+              If rank(A) = r < n: <br>
+              The row-reduced echelon form of A will have r non-zero rows and n - r zero rows.<br>
+              This means there are n - r free variables in the solution to Ax = 0.<br>
+              The nullity(A) will be n - r, and the theorem holds (n = r + (n - r)). 
+           </pre>
+
+               <center><button onclick="window.location.href='home.html'">Back</button>
+               <button onclick="window.location.href='home.html'">Home</button>
+               <button onclick="window.location.href='theorem-2.html'">Next</button></center>
+             <footer>
+          <div class="footer">
+          <h2><center>Patil institution <br>Call:+9071014999<br>
+            K.V.Compound Gangavathi Road ,SINDHANUR-584128</center></h2>
+          </div>
+        </footer>

@@ -1,0 +1,39 @@
+.header{
+    background-color:teal;
+    justify-content: space-between;
+    color:white;
+    align-items:center;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    
+}
+.table{
+    margin-top: 30px;
+    width:50%;
+    margin-left:20%;
+    text-align: center;
+    margin-bottom:3%;
+}
+.table,th,td{
+    text-align: center;
+}
+.fontstyle{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:black;
+}
+.main{
+    display:inline-flexbox;
+    
+}
+.footer{
+    background-color: teal;
+    color: white;
+    padding: 1%;
+    
+    margin-bottom: 0%;
+    margin-top: 16%;
+    
+
+}
